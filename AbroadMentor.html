@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AbroadMentor Dashboard</title>
+  <link rel="stylesheet" href="abroadmentor.css" />
+</head>
+<body>
+
+  <main>
+    <div class="abroadmentor-intro">
+      <div class="abroadmentor-card">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h2>Start Your Journey</h2>
+          <p>Abroad Mentors is a platform connecting experienced professionals worldwide with aspiring individuals seeking guidance, mentorship, and global career insights.</p>
+          <button id="showFormBtn" class="primary-btn">Register Know</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="actionButtons" style="display: none;">
+      <button id="editDetailsBtn" class="edit-btn">Edit Details</button>
+      <button id="deleteDetailsBtn" class="delete-btn">Delete Details</button>
+    </div>
+    
+    <h2 id="formTitle" style="display:none;">Add your Details</h2>
+
+    <form id="abroadForm" style="display: none;">
+      <div class="form-container">
+        <div class="form-left">
+          <img src="images/consultancyform.jpg" alt="Abroad Visual" />
+        </div>
+
+        <div class="form-right">
+          <div class="step-indicator" id="stepIndicator"></div>
+          <div id="stepContent"></div>
+          <div class="form-buttons">
+            <button type="button" id="prevBtn">⟵ Back</button>
+            <button type="button" id="nextBtn">Next ⟶</button>
+            <button type="submit" id="submitBtn" style="display:none;">💾 Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div id="displayData" style="display: none;" class="summary-card"></div>
+  </main>
+
+  <script src="abroadmentor.js"></script>
+</body>
+</html>

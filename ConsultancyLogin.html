@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultancy Login</title>
+    <link rel="stylesheet" href="ConsultancyLoginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <form id="loginForm" class="box" method="post">
+            <h1>Login</h1>
+            <div class="username">
+                <input type="text" placeholder="Enter Username" id="username" required/>
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Enter Email" id="email" required />
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Enter Password" id="password" required/>
+                <i class="fas fa-lock-open"></i>
+            </div>
+            <button id="btn" type="submit" onclick="validate()">Login</button>
+
+        </form>
+    </div>
+    <script src="ConsultancyLoginscript.js"></script>
+    
+</body>
+</html>

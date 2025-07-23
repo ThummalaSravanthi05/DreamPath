@@ -1,0 +1,305 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f8;
+}
+
+/* Profile section */
+.profile-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.profile-circle {
+  width: 45px;
+  height: 45px;
+  background-color: #b73f3f;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 10px;
+  position: absolute;
+  right: 0;
+  width: 250px;
+  display: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.profile-email {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-icon {
+  cursor: pointer;
+  color: #555;
+}
+
+#closeProfile {
+  color: red;
+  text-align: right;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#emailInput {
+  width: 100%;
+  padding: 6px;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+main {
+  padding: 20px;
+}
+
+.consultancy-intro {
+  background-image: url('images/consultancypage.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+  transition: opacity 0.5s ease;
+}
+.consultancy-intro.hidden {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: #fff3e0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.form-right {
+  flex: 2;
+  padding: 40px;
+  background: white;
+}
+
+.step-indicator {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.step-indicator div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.step-indicator .active {
+  background: #c3749c;
+  color: white;
+}
+
+#stepContent {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: 2px solid #c3749c;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #c3749c;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #c3749c;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #f0c7cf;
+}
+
+.consultancy-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.card-body h2 {
+  margin-top: 10px;
+  color: #c3749c;
+}
+
+.card-body p {
+  color: black;
+  margin: 15px 0 25px;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #c3749c, #c3749c);
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(135deg, #f0c7cf, #f0c7cf);
+}
+.media-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.media-item {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.media-item video {
+  width: 100%;
+  height: auto;
+}
+
+
+.edit-btn, .delete-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.edit-btn {
+  background-color: #c3749c;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #c3749c;
+  color: white;
+}
+
+.summary-card {
+  background: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.summary-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.summary-card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.summary-card button {
+  margin-top: 15px;
+  background-color: #c3749c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.summary-card button:hover {
+  background-color: #c3749c;
+}

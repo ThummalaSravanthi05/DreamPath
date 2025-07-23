@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(252, 240, 243);
+}
+.header{
+    /*width: 100%;
+    height: 100vh;*/
+    padding: 0 5%;
+    background: #c3749c;
+}
+.name{
+    color: #000;
+    margin-left: -290px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    z-index: 100;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color:#000;
+    pointer-events: auto;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    color: #f1a8cd;
+    transition: color 0.3s ease-in-out;
+}
+nav ul li ul.dropdown li{
+    display: block;
+    width:100%;
+    padding: 10px;
+    white-space: nowrap;
+}
+nav ul li ul.dropdown{
+    width: 250px;
+    /*background: #111;*/
+    position: absolute;
+    top:100%;
+    left: 0;
+    z-index: 999;
+    display: none;
+    padding: 10px 0;
+    text-align: left;
+}
+nav ul li:hover ul.dropdown{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+.text{
+    margin-left: 40px;
+    margin-top: 130px;
+    max-width: 600px;
+}
+.text h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #000;
+    margin-left: 10px;
+}
+.text p{
+    color: #000;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.text a{
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    /*background: rgba(231, 118, 18, 0.827)*/
+    background: #c3749c;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 50px;
+    border-radius: 6px;
+    margin-left: 30px;
+}
+.sideimage{
+    position: absolute;
+    top: 0;
+    right: 12%;   
+}
+.sideimage img{
+    display: block;
+    padding-top: 200px;
+    width: 500px;
+    height: auto;
+    margin-left: 300px;
+    margin-bottom: -205px;
+}
+.text a:hover{
+    background-color: #f0c7cf;
+}
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 20px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .name {
+        font-size: 30px;
+        margin: 10px 0 0 0;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li ul.dropdown {
+        position: static;
+        display: none;
+    }
+
+    nav ul li:hover ul.dropdown {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .text {
+        margin-top: 50px;
+        max-width: 100%;
+    }
+
+    .text h1 {
+        font-size: 28px;
+        margin-left: 0;
+    }
+
+    .text p {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .text a {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .sideimage {
+        position: static;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .sideimage img {
+        padding-top: 0;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+}

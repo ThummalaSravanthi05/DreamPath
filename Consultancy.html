@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consultancy Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Consultancystyle.css" />
+
+</head>
+<body>
+  <div class="profile-wrapper">
+  <div class="profile-circle" id="profileIcon">S</div>
+  <div class="profile-dropdown" id="profileDropdown">
+    <div class="profile-email">
+  <span id="userEmail">Hi, User!</span>
+  <i class="fas fa-pencil-alt edit-icon" id="editEmail" title="Change Password"></i>
+</div>
+
+<!-- Change Password Button -->
+<button id="changePasswordBtn" style="display: none; margin-top: 10px;">Change Password</button>
+
+<!-- Password reset info -->
+<div id="changePasswordInfo" style="margin-top: 10px; color: #666; display: none;">
+  A password reset link has been sent to your email.
+</div>
+
+<div id="closeProfile">❌</div>
+  </div>
+</div>
+
+  
+
+  <main>
+    <div class="consultancy-intro">
+      <div class="consultancy-card">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h2>Start Your Consultancy Journey</h2>
+          <p>Join our platform and connect with thousands of students seeking guidance. Add your consultancy to be visible and impactful.</p>
+          <button id="showFormBtn" class="primary-btn">Add Your Consultancy</button>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="actionButtons" style="display: none;">
+      <button id="editDetailsBtn" class="edit-btn">Edit Details</button>
+      <button id="deleteDetailsBtn" class="delete-btn">Delete Details</button>
+    </div>
+    
+    <h2 id="formTitle" style="display:none;">Add your Consultancy</h2>
+
+    <form id="consultancyForm" style="display: none;">
+      <div class="form-container">
+        <div class="form-left">
+          <img src="images/consultancyform.jpg" alt="Consultancy Visual" />
+        </div>
+
+        <div class="form-right">
+          <div id="stepIndicator" class="step-indicator"></div>
+          <div id="stepContent"></div>
+          <div class="form-buttons">
+            <button type="button" id="prevBtn">⟵ Back</button>
+            <button type="button" id="nextBtn">Next ⟶</button>
+            <button type="submit" id="submitBtn" style="display:none;">💾 Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div id="displayData" style="display: none;" class="summary-card"></div>
+  </main>
+
+  <script src="Consultancyscript.js"></script>
+</body>
+</html>

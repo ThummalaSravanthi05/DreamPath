@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.about{
+    padding: 100px 0 20px 0;
+    text-align: center;
+}
+.about h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.about p{
+    font-size: 1rem;
+    color: #323030;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about-info{
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.about-img{
+    width: 15rem;
+    height: 15rem;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+.about-info p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #444;
+    margin: 0 2rem;
+    text-align: justify;
+}
+
+.about-info p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #c3749c;
+}
+
+button{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #f0c7cf;
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: #c3749c;
+}
+.team{
+    padding: 30px 0;
+    text-align: center;
+}
+.team h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.teamimages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.teamno1,.teamno2,.teamno3,.teamno4{
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: transform 0.2s,box-shadow 0.2s;
+    width: 18rem;
+    height: 25rem;
+    margin-top: 10px;
+}
+.teamno1:hover,.teamno2:hover,.teamno3:hover,.teamno4:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.5);
+}
+.teamno1-img,.teamno2-img,.teamno3-img,.teamno4-img{
+    width: 18rem;
+    height: 12rem;
+}
+.teamno1-img img,.teamno2-img img,.teamno3-img img,.teamno4-img img{
+    height: 100%;
+    object-fit: fill;
+}
+.teamno1-info button{
+    margin: 2rem 1rem;
+}
+.name{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.email{
+    font-size: 1rem;
+    color: #555;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons,.copyrightmsg{
+    text-align: center;
+}
+.icons .fa{
+    color: #c3749c;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 2rem;
+  width: 35%;
+  margin: 10% auto;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content h2 {
+  margin-bottom: 0.2rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.modal-content p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+  outline: none;
+  border-color: #c3749c;
+  background: #fff;
+  box-shadow: 0 0 0 2px #f0c7cf;
+}
+
+.modal-content textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.modal-content button.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background: #c3749c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-content button.submit-btn:hover {
+  background: #a84b7a;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 1.5rem;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.close:hover {
+  color: #c3749c;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
+
+@media(max-width:700px){
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .about-info p {
+        margin: 1rem 2rem;
+    }
+
+    .about-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+
+    .team {
+        margin: 0 1rem;
+    }
+}

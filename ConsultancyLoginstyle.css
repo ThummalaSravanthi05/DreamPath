@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat",sans-serif;
+    background: url("images/consultancybackgroundlogin.jpg") no-repeat ;
+    /*background-color: #eed7e2;*/
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.box{
+    border-radius: 20px;
+    width: 400px;
+    padding: 30px;
+    border: 2px solid black;
+    /*border: 2px solid orangered;
+    background-color: rgba(0,0,0,0.4);*/
+    background-color: transparent;
+    /*margin-left: 750px;
+    box-shadow: 1px 1px 2px #ffc400ef;*/
+    display: flex;
+    flex-direction: column;
+}
+.box h1{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: center;
+}
+.username,
+.password,.email{
+    position: relative;
+}
+.fa-envelope,
+.fa-lock-open{
+    position: absolute;
+    left: 19px;
+    top: 40px;
+    color: #000;
+}
+
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="email"]{
+    font-size: 20px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #000;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: #000;
+    border-radius: 24px;
+    transition: all .2s ease-in;
+}
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+.box input[type="password"]:focus{
+    width: 250px;
+    border-color: #000;
+}
+.wrapper{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+#btn{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #000;
+    padding: 14px 35px;
+    font-size: 18px;
+    color: #000;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #efe3e6;
+}

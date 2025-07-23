@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Homestyles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="navlinks" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Aboutus.html">About us</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text">
+            <h1>Welcome to DreamPath!</h1>
+            <p>Dream Path is a one-stop platform guiding students through every step of studying abroad, from <br>visa processes to university selection and career opportunities.</p>
+            <a href="#our-facilities" class="button">Know More</a>
+        </div>
+    </section>
+
+    <section class="our-facilities" id="our-facilities">
+        <h1>Services We Offer</h1>
+        <p>"Empowering Your Study Abroad Journey - From Guidance to Success!"</p>
+        <div class="row">
+            <div class="faciltycol">
+                <a href="#"><h3>Visa Guide</h3></a>
+                <img src="images/visaprocess.jpg" class="visa" width="250" height="100">
+                <p>Our Visa Guide simplifies the entire application process, from document preparation to interview tips. Get country-specific insights and expert support for a hassle-free study abroad journey.</p>
+            </div>
+            <div class="faciltycol">
+                <a href="#"><h3>Consultancy Details</h3></a>
+                <img src="images/Consultancy.png" class="consultancy" width="250" height="100">
+                <p>Explore a curated list of top study abroad consultancies, complete with ratings, services, and success stories. Compare options and choose the right consultancy to guide your journey.</p>
+            </div>
+            <div class="faciltycol">
+                <a href="#"><h3>Universities & Courses</h3></a>
+                <img src="images/Universities.png" class="university" width="250" height="100">
+                <p>Discover top universities and courses worldwide, adapt to your career goals. Get insights on rankings, admission requirements.</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="faciltycol">
+                <a href="#"><h3>Loan Guide</h3></a>
+                <img src="images/loan.jpg" class="loan" width="250" height="100">
+                <p>Navigate education loans with ease—compare options, understand eligibility, and get expert guidance on securing the best financial support for your studies abroad.</p>
+            </div>
+            
+            <div class="faciltycol">
+                <a href="#"><h3>Part time jobs</h3></a>
+                <img src="images/partime.png" class="parttime" width="250" height="100">
+                <p>Explore part-time job opportunities worldwide with our interactive graphs. Compare countries based on job availability and make informed decisions for your study and work journey.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="Mission" id="Mission">
+            <img class="mimage" src="images/cropped_image (2).png">
+        <div class="Mtext">
+            <h1>Our Mission</h1>
+            <p>Our mission is to empower students with accurate, transparent, and comprehensive information on studying abroad.<br> From visa processes to university selection, consultancies, financial support, and part-time job opportunities, we provide a one-stop platform to simplify your journey and help you
+             make informed decisions for a successful future!</p>
+        </div>
+    </section>
+    <br>
+    <section class="Vision">
+            <img class="vimage" src="images/cropped_image (1).png">
+        <div class="vtext">
+            <h1>Our Vision</h1>
+            <p>Our vision is to become the most trusted and comprehensive platform for students aspiring to study abroad.<br> We aim to simplify the complex processes of university selection, visa applications, financial aid, and career planning.
+                By leveraging technology and expert insights, we strive to empower students to make informed decisions and achieve their academic and career dreams with confidence.</p>
+        </div>
+    </section>
+    <br>
+    <section class="Values">
+            <img class="vaimage" src="images/cropped_image (3).png">
+        <div class="vatext">
+            <h1>Our Values</h1>
+            <p>At Dream Path, we are committed to upholding transparency, integrity, and inclusivity in every aspect of our platform.<br> We believe in providing clear, accurate, and unbiased information to empower students in making informed decisions about their study abroad journey
+                .Our focus on ethical guidance ensures that students receive trustworthy resources and support. </p>
+        </div>
+    </section>
+    <section class="reviews">
+        <h1>What our People Says</h1>
+        <div class="row">
+            <div class="review-col">
+                <img src="images/boystudent.png" class="rev-1" width="100" height="100">
+                <div>
+                    <p>Dream Path made my study abroad journey so smooth!
+                         Highly recommend their services.</p>
+                    <h4>- Kiran, USA</h4>
+                </div>
+            </div>
+            <div class="review-col">
+                <img src="images/Girlstudent.png" class="rev-2"width="100" height="100">
+                <div>
+                    <p>Thanks to Dream Path, I got into my dream university in Canada!</p>
+                    <h4>- Ramya, USA</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1>Contact Details</h1>
+        <a href="Contact.html" class="button">CONTACT US</a>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>At Dream Path, we believe that every student deserves a clear and hassle-free journey toward their dream of studying abroad. 
+            Our platform is designed to provide accurate, structured, and up-to-date information on everything related to international educatio</p>
+    </section>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p class="copyrightmsg">&copy; 2025 Dream Path. All Rights Reserved.</p>
+    
+
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-250px";
+        }
+    </script>
+    
+</body>
+</html>

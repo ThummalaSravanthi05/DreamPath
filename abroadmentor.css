@@ -1,0 +1,220 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f8;
+}
+
+main {
+  padding: 20px;
+}
+
+.abroadmentor-intro {
+  background-image: url('images/abroadmentor.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+  transition: opacity 0.5s ease;
+}
+.abroadmentor-intro.hidden {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: #fff3e0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.form-right {
+  flex: 2;
+  padding: 40px;
+  background: white;
+}
+
+.step-indicator {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.step-indicator div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.step-indicator .active {
+  background: #c3749c;
+  color: white;
+}
+
+#stepContent {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: 2px solid #f0c7cf;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #c3749c;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #c3749c;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #c34a86;
+}
+
+.abroadmentor-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.card-body h2 {
+  margin-top: 10px;
+  color: #c3749c;
+}
+
+.card-body p {
+  color: black;
+  margin: 15px 0 25px;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #c3749c, #c3749c);
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(135deg, #c3749c, #c3749c);
+}
+
+.edit-btn, .delete-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.edit-btn {
+  background-color: #c3749c;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #c3749c;
+  color: white;
+}
+
+.summary-card {
+  background: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.summary-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.summary-card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.summary-card button {
+  margin-top: 15px;
+  background-color: #c3749c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.summary-card button:hover {
+  background-color: #c3749c;
+}
