@@ -1,4 +1,3 @@
-/* Global Styles */
 :root {
     --primary-color: #5a1f4f;
     --secondary-color: #945187;
@@ -29,7 +28,6 @@ body {
     color: var(--text-color);
 }
 
-/* Navigation */
 .navbar {
     position: fixed;
     top: 0;

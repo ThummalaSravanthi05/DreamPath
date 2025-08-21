@@ -6,16 +6,25 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(252, 240, 243);
+    background-color: #fceef3;
 }
+.logo {
+  border-radius: 50%;
+  border: 2px solid #ccc; 
+  padding: 8px; 
+  box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+  background-color: white; 
+  width: 70px; 
+  height: 100px;
+  object-fit: contain;
+}
+
 .header{
-    /*width: 100%;
-    height: 100vh;*/
     padding: 0 5%;
-    background: #c3749c;
+    background: #5a1f4f;
 }
 .name{
-    color: #000;
+    color: #ffffff;
     margin-left: -290px;
     font-size: 40px;
     margin-top: 20px;
@@ -42,12 +51,12 @@ nav ul li{
 nav ul li a{
     display: block;
     text-decoration: none;
-    color:#000;
+    color:#fff;
     pointer-events: auto;
     font-size: 18px;
 }
 nav ul li a:hover {
-    color: #f1a8cd;
+    color: #cc97aa;
     transition: color 0.3s ease-in-out;
 }
 nav ul li ul.dropdown li{
@@ -56,22 +65,91 @@ nav ul li ul.dropdown li{
     padding: 10px;
     white-space: nowrap;
 }
+nav ul li ul.dropdown li a {
+    color: white;
+    padding: 12px 24px;
+    display: block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+nav ul li ul.dropdown li a:hover {
+    background-color: transparent;
+    color: #c3749c;
+}
 nav ul li ul.dropdown{
-    width: 250px;
-    /*background: #111;*/
+    width: 350px;
+    background: #5a1f4f;
     position: absolute;
     top:100%;
     left: 0;
     z-index: 999;
     display: none;
-    padding: 10px 0;
-    text-align: left;
+    padding: 0;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 nav ul li:hover ul.dropdown{
     display: block;
-    width: 100%;
-    padding: 10px;
 }
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 200; /* so it stays above menu */
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Transform into X when active */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none; /* Hide by default on small screens */
+        flex-direction: column;
+        background: #5a1f4f;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex; /* Show only when .show is added */
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li ul.dropdown {
+        position: static;
+    }
+}
+
+
 .text{
     margin-left: 40px;
     margin-top: 130px;
@@ -91,9 +169,8 @@ nav ul li:hover ul.dropdown{
 .text a{
     display: inline-block;
     text-decoration: none;
-    color: #111;
-    /*background: rgba(231, 118, 18, 0.827)*/
-    background: #c3749c;
+    color: #fff;
+    background: #5a1f4f;
     padding: 10px 30px;
     font-size: 20px;
     margin-top: 50px;
@@ -114,7 +191,7 @@ nav ul li:hover ul.dropdown{
     margin-bottom: -205px;
 }
 .text a:hover{
-    background-color: #f0c7cf;
+    background-color: #cc97aa;
 }
 @media (max-width: 768px) {
     .header {

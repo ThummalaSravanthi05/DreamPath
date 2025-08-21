@@ -6,9 +6,25 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="Homestyles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-    <section class="header">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logoindex.png" alt="Logo" class="logo-img">
+            <h1>Dream Path</h1>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Aboutus.html">About us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <!--<section class="header">
         <nav>
             <div class="navlinks" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -19,8 +35,9 @@
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-        <div class="text">
+        </nav>-->
+    <section id="home" class="hero">
+        <div class="text" id="text">
             <h1>Welcome to DreamPath!</h1>
             <p>Dream Path is a one-stop platform guiding students through every step of studying abroad, from <br>visa processes to university selection and career opportunities.</p>
             <a href="#our-facilities" class="button">Know More</a>
@@ -32,32 +49,32 @@
         <p>"Empowering Your Study Abroad Journey - From Guidance to Success!"</p>
         <div class="row">
             <div class="faciltycol">
-                <a href="#"><h3>Visa Guide</h3></a>
+                <a href="#"><h3 class="heading">Visa Guide</h3></a>
                 <img src="images/visaprocess.jpg" class="visa" width="250" height="100">
-                <p>Our Visa Guide simplifies the entire application process, from document preparation to interview tips. Get country-specific insights and expert support for a hassle-free study abroad journey.</p>
+                <p class="subtitle">Our Visa Guide simplifies the entire application process, from document preparation to interview tips. Get country-specific insights and expert support for a hassle-free study abroad journey.</p>
             </div>
             <div class="faciltycol">
-                <a href="#"><h3>Consultancy Details</h3></a>
+                <a href="#"><h3 class="heading">Consultancy Details</h3></a>
                 <img src="images/Consultancy.png" class="consultancy" width="250" height="100">
-                <p>Explore a curated list of top study abroad consultancies, complete with ratings, services, and success stories. Compare options and choose the right consultancy to guide your journey.</p>
+                <p class="subtitle">Explore a curated list of top study abroad consultancies, complete with ratings, services, and success stories. Compare options and choose the right consultancy to guide your journey.</p>
             </div>
             <div class="faciltycol">
-                <a href="#"><h3>Universities & Courses</h3></a>
+                <a href="#"><h3 class="heading">Universities & Courses</h3></a>
                 <img src="images/Universities.png" class="university" width="250" height="100">
-                <p>Discover top universities and courses worldwide, adapt to your career goals. Get insights on rankings, admission requirements.</p>
+                <p class="subtitle">Discover top universities and courses worldwide, adapt to your career goals. Get insights on rankings, admission requirements.</p>
             </div>
         </div>
         <div class="row2">
             <div class="faciltycol">
-                <a href="#"><h3>Loan Guide</h3></a>
+                <a href="#"><h3 class="heading">Loan Guide</h3></a>
                 <img src="images/loan.jpg" class="loan" width="250" height="100">
-                <p>Navigate education loans with ease—compare options, understand eligibility, and get expert guidance on securing the best financial support for your studies abroad.</p>
+                <p class="subtitle">Navigate education loans with ease—compare options, understand eligibility, and get expert guidance on securing the best financial support for your studies abroad.</p>
             </div>
             
             <div class="faciltycol">
-                <a href="#"><h3>Part time jobs</h3></a>
+                <a href="#"><h3 class="heading">Part time jobs</h3></a>
                 <img src="images/partime.png" class="parttime" width="250" height="100">
-                <p>Explore part-time job opportunities worldwide with our interactive graphs. Compare countries based on job availability and make informed decisions for your study and work journey.</p>
+                <p class="subtitle">Explore part-time job opportunities worldwide with our interactive graphs. Compare countries based on job availability and make informed decisions for your study and work journey.</p>
             </div>
         </div>
     </section>
@@ -65,8 +82,8 @@
     <section class="Mission" id="Mission">
             <img class="mimage" src="images/cropped_image (2).png">
         <div class="Mtext">
-            <h1>Our Mission</h1>
-            <p>Our mission is to empower students with accurate, transparent, and comprehensive information on studying abroad.<br> From visa processes to university selection, consultancies, financial support, and part-time job opportunities, we provide a one-stop platform to simplify your journey and help you
+            <h1 class="heading">Our Mission</h1>
+            <p class="subtitle">Our mission is to empower students with accurate, transparent, and comprehensive information on studying abroad.<br> From visa processes to university selection, consultancies, financial support, and part-time job opportunities, we provide a one-stop platform to simplify your journey and help you
              make informed decisions for a successful future!</p>
         </div>
     </section>
@@ -74,8 +91,8 @@
     <section class="Vision">
             <img class="vimage" src="images/cropped_image (1).png">
         <div class="vtext">
-            <h1>Our Vision</h1>
-            <p>Our vision is to become the most trusted and comprehensive platform for students aspiring to study abroad.<br> We aim to simplify the complex processes of university selection, visa applications, financial aid, and career planning.
+            <h1 class="heading">Our Vision</h1>
+            <p class="subtitle">Our vision is to become the most trusted and comprehensive platform for students aspiring to study abroad.<br> We aim to simplify the complex processes of university selection, visa applications, financial aid, and career planning.
                 By leveraging technology and expert insights, we strive to empower students to make informed decisions and achieve their academic and career dreams with confidence.</p>
         </div>
     </section>
@@ -83,8 +100,8 @@
     <section class="Values">
             <img class="vaimage" src="images/cropped_image (3).png">
         <div class="vatext">
-            <h1>Our Values</h1>
-            <p>At Dream Path, we are committed to upholding transparency, integrity, and inclusivity in every aspect of our platform.<br> We believe in providing clear, accurate, and unbiased information to empower students in making informed decisions about their study abroad journey
+            <h1 class="heading">Our Values</h1>
+            <p class="subtitle">At Dream Path, we are committed to upholding transparency, integrity, and inclusivity in every aspect of our platform.<br> We believe in providing clear, accurate, and unbiased information to empower students in making informed decisions about their study abroad journey
                 .Our focus on ethical guidance ensures that students receive trustworthy resources and support. </p>
         </div>
     </section>
@@ -94,16 +111,16 @@
             <div class="review-col">
                 <img src="images/boystudent.png" class="rev-1" width="100" height="100">
                 <div>
-                    <p>Dream Path made my study abroad journey so smooth!
+                    <p class="subtitle">Dream Path made my study abroad journey so smooth!
                          Highly recommend their services.</p>
-                    <h4>- Kiran, USA</h4>
+                    <h4 class="heading">- Kiran, USA</h4>
                 </div>
             </div>
             <div class="review-col">
                 <img src="images/Girlstudent.png" class="rev-2"width="100" height="100">
                 <div>
-                    <p>Thanks to Dream Path, I got into my dream university in Canada!</p>
-                    <h4>- Ramya, USA</h4>
+                    <p class="subtitle">Thanks to Dream Path, I got into my dream university in Canada!</p>
+                    <h4 class="heading">- Ramya, USA</h4>
                 </div>
             </div>
         </div>
@@ -111,7 +128,7 @@
 
     <section class="contact">
         <h1>Contact Details</h1>
-        <a href="Contact.html" class="button">CONTACT US</a>
+        <a href="Contact.html" class="contactbutton">CONTACT US</a>
     </section>
 
     <section class="footer">
@@ -120,9 +137,9 @@
             Our platform is designed to provide accurate, structured, and up-to-date information on everything related to international educatio</p>
     </section>
     <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
     </div>
     <p class="copyrightmsg">&copy; 2025 Dream Path. All Rights Reserved.</p>
     
@@ -136,6 +153,116 @@
         function hideMenu(){
             navLinks.style.right = "-250px";
         }
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll(".fade-in");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = "running";
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(el => {
+                el.style.animationPlayState = "paused";
+                observer.observe(el);
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+    // Home section animation
+        const homeSection = document.querySelector("#home");
+        homeSection.addEventListener("mouseenter", function () {
+        homeSection.classList.remove("animate");
+        void homeSection.offsetWidth; // Restart animation
+        homeSection.classList.add("animate");
+        });
+
+    // Our Facilities section animation
+        const facilitiesSection = document.querySelector("#our-facilities");
+        facilitiesSection.addEventListener("mouseenter", function () {
+        facilitiesSection.classList.remove("animate");
+        void facilitiesSection.offsetWidth; // Restart animation
+        facilitiesSection.classList.add("animate");
+        });
+        });
+        
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const facilityCols = document.querySelectorAll(".faciltycol");
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.setProperty('--delay', `${index * 0.2}s`);
+                        entry.target.style.animationPlayState = "running";
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            facilityCols.forEach(col => {
+                col.style.animationPlayState = "paused";
+                observer.observe(col);
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+    function restartAnimation(element, animationClass) {
+        element.classList.remove(animationClass);
+        void element.offsetWidth; // Forces reflow to restart animation
+        element.classList.add(animationClass);
+    }
+
+    // Facilities - fade up
+    document.querySelectorAll(".faciltycol").forEach((col, index) => {
+        col.addEventListener("mouseenter", () => {
+            restartAnimation(col, "animate-fade-up");
+        });
+    });
+
+    // Mission, Vision, Values
+    const mission = document.querySelector(".Mission");
+    const vision = document.querySelector(".Vision");
+    const values = document.querySelector(".Values");
+
+    if (mission) {
+        mission.addEventListener("mouseenter", () => {
+            restartAnimation(mission, "animate-slide-left");
+        });
+    }
+    if (vision) {
+        vision.addEventListener("mouseenter", () => {
+            restartAnimation(vision, "animate-slide-right");
+        });
+    }
+    if (values) {
+        values.addEventListener("mouseenter", () => {
+            restartAnimation(values, "animate-slide-left");
+        });
+    }
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+    const animatedSections = document.querySelectorAll(
+        ".about-us, .what-people-say, .contact, .our-facilities"
+    );
+
+    function animateOnScroll() {
+        animatedSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+
+            // If section is visible in viewport
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                section.classList.add("animate-section");
+            } else {
+                section.classList.remove("animate-section"); // remove if not visible
+            }
+        });
+    }
+
+    // Trigger on scroll & on page load
+    window.addEventListener("scroll", animateOnScroll);
+    animateOnScroll();
+    });
+    
+
     </script>
     
 </body>

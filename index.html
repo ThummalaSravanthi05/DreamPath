@@ -10,8 +10,14 @@
 <body>
     <div class="header">
         <nav>
-            <a href="index.html"><img src="images/logoindex.png" width="100" height="100" class="logo"></a>
+            <a href="index.html"><img src="images/logoindex.png"  class="logo"></a>
             <h1 class="name">Dream Path</h1>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="#">GlobalPath ▽</a>
@@ -25,7 +31,8 @@
                 </li>
                 <li><a href="ConsultancyLogin.html">Consultancies Login</a></li>
                 <li><a href="AbroadLogin.html">Abroad Mentors</a></li>
-            </ul>            
+            </ul> 
+                       
         </nav>
         </div>
         <div class="text">
@@ -37,5 +44,15 @@
         <div class="sideimage">
             <img src="images/indexbackground.png">
         </div>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+                hamburger.classList.toggle('active');
+            });
+        </script>
+
 </body>
 </html>
