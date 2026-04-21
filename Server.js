@@ -120,7 +120,7 @@ app.post("/api/contact", async (req, res) => {
 
 
 const PORT = process.env.PORT || 5000;
-const path = require("path");
+
 
 // Serve all static files from root directory
 app.use(express.static(__dirname));
